@@ -1,7 +1,7 @@
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
 
-module.exports = {
-  content: ["./**/*.{html,js}"],
+export default {
+  content: ["./**/*.{html,js,ts}"],
   theme: {
     colors: {
       primary: colors.indigo,
