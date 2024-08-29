@@ -3,7 +3,8 @@ import Alpine from 'alpinejs';
 declare global {
   interface Window {
     hello: unknown;
-    alpine: typeof Alpine;
+    Alpine: typeof Alpine;
+    content: any;
   }
 }
 
@@ -11,7 +12,14 @@ window.hello = function (name: string) {
   alert("Hello " + name);
 };
 
-window.alpine = Alpine
+document.addEventListener('alpine:init', () => {
+  Alpine.store('list', {
+      content: ["first message", "second message"],
+      add(item: string) {
+        this.content.push(item);
+      }
+  })
+})
 
 Alpine.start()
 

@@ -15,7 +15,7 @@
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "dev": "npx serve & npm run watch-css & npm run watch-js",
+    "watch": "npm run watch-css & npm run watch-js", 
     "watch-css": "npx postcss src/css/input.css -o dist/styles/output.css -w",
     "watch-js": "npx esbuild src/ts/*.ts --bundle --sourcemap=inline --outdir=dist/js --watch"
   }

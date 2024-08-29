@@ -1,6 +1,6 @@
 # Static Page Starter
 
-Build static page with modern dev tool
+Build pure HTML+CSS+JS static page with modern dev tool (without react, vue,etc)
 
 ## Prerequisite
 
@@ -10,7 +10,9 @@ Build static page with modern dev tool
 
 ```bash
 npm install  # install package
-npm run dev  # run dev server
+
+npx serve       # serve the static page
+npm run watch   # watch change and bundle css/js
 ```
 
 ## Tech Overview
@@ -26,7 +28,6 @@ npm run dev  # run dev server
 
 <iman.tung@gmail.com>
 
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details  

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Page Starter</title>
     <link href="./dist/styles/output.css" rel="stylesheet">
+
 </head>
 
 <body class="flex flex-col h-screen justify-between font-mono">
@@ -18,15 +19,36 @@
 
     <main class="px-6 py-4 mb-auto">
         <h1 x-data="{ message: 'I ❤️ Static Page' }" x-text="message"></h1>
-        <button type="button" class="btn-primary" onclick="hello('World')">
-            Click Me!
-        </button>
+        <div>
+            <button type="button" class="btn-primary" onclick="hello('World')">
+                Click Me!
+            </button>
+        </div>
+
+        <div class="border p-5 mt-6">
+            <div x-data="{ message: '' }">
+                <input class="textbox" id="message" x-model="message" type="text" placeholder="Some Message" @keyup.enter="$store.list.add(message); message='';">
+                <button type="submit" class="btn-primary" x-data @click="$store.list.add(message); message='';">
+                    Add
+                </button>
+            </div>
+    
+            <ul x-data="{}">
+                <template x-for="(message, index) in $store.list.content">
+                    <li>
+                        <span x-text="index + ': '"></span>
+                        <span x-text="message"></span>
+                    </li>
+                </template>
+            </ul>
+        </div>
+
     </main>
 
     <footer class="border-t-2 mt-6 px-6 py-4 bg-secondary-600">
         <p>(c) 2024 iman.tung@gmail.com | MIT License</p>
     </footer>
-    
+
     <script type="text/javascript" src="./dist/js/main.js" defer></script>
 </body>
 
