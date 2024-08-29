@@ -13,12 +13,7 @@ window.hello = function (name: string) {
 };
 
 document.addEventListener('alpine:init', () => {
-  Alpine.store('list', {
-      content: ["first message", "second message"],
-      add(item: string) {
-        this.content.push(item);
-      }
-  })
+  console.log("ok"); // TODO: init event
 })
 
 Alpine.start()

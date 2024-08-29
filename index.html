@@ -25,16 +25,17 @@
             </button>
         </div>
 
-        <div class="border p-5 mt-6">
-            <div x-data="{ message: '' }">
-                <input class="textbox" id="message" x-model="message" type="text" placeholder="Some Message" @keyup.enter="$store.list.add(message); message='';">
-                <button type="submit" class="btn-primary" x-data @click="$store.list.add(message); message='';">
+        <div class="border p-5 mt-6" x-data="{ messages: ['message-1', 'message-2'], message: '' }">
+            <div>
+                <input class="textbox" id="message" x-model="message" type="text" placeholder="Some Message"
+                    @keyup.enter="messages.push(message); message='';">
+                <button type="submit" class="btn-primary" x-data @click="messages.push(message);  message='';">
                     Add
                 </button>
             </div>
-    
-            <ul x-data="{}">
-                <template x-for="(message, index) in $store.list.content">
+
+            <ul>
+                <template x-for="(message, index) in messages">
                     <li>
                         <span x-text="index + ': '"></span>
                         <span x-text="message"></span>
