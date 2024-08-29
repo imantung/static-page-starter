@@ -4,23 +4,23 @@ Build static page with modern dev tool
 
 ## Prerequisite
 
-- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm): package manager for Node.js packages, or modules
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) -- package manager for Node.js packages, or modules
 
 ## Getting Started
 
 ```bash
-npm install  # first time only
-
+npm install  # install package
 npm run dev  # run dev server
 ```
 
 ## Tech Overview
 
-- [Serve](https://www.npmjs.com/package/serve) -- Serve a static site
-- [PostCSS](https://postcss.org/): Transforming CSS with JavaScript
+- [Serve](https://www.npmjs.com/package/serve) -- Serve a static site from local folder
+- [TypeScript](https://www.typescriptlang.org/) -- JavaScript with syntax for types
 - [Tailwind](https://tailwindcss.com/) -- Utility-first CSS framework
-- [ESBuild](https://esbuild.github.io/) -- Bundler for the web
 - [AlpineJS](https://alpinejs.dev/) -- jQuery for the modern web
+- [PostCSS](https://postcss.org/) -- Transforming CSS with JavaScript
+- [ESBuild](https://esbuild.github.io/) -- Bundler for the web
 
 ## Author
 
