@@ -8,6 +8,7 @@ declare global {
   }
 }
 
+
 window.hello = function (name: string) {
   alert("Hello " + name);
 };

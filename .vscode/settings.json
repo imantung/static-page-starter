@@ -1,0 +1,23 @@
+{
+    "editor.linkedEditing": true,
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript][javascriptreact][typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css][scss][less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "files.associations": {
+        "**/dist/**/*": "plaintext"
+    }
+}
