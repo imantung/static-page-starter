@@ -8,6 +8,12 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["src/**/*.ts*"],
-  "exclude": ["node_modules", "dist", "lib"]
+  "include": [
+    "src/**/*.ts*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib"
+  ]
 }

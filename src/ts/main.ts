@@ -4,7 +4,6 @@ declare global {
   interface Window {
     hello: unknown;
     Alpine: typeof Alpine;
-    content: any;
   }
 }
 

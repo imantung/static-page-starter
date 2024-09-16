@@ -1,6 +1,6 @@
 # Static Page Starter
 
-Build pure HTML+CSS+JS static page with modern dev tool (without react, vue,etc)
+Build pure HTML+CSS+JS static web page with modern dev tool (without react, vue,etc). Read more at [medium article](https://medium.com/p/7ae6e55b2249).
 
 ## Prerequisite
 
@@ -30,4 +30,4 @@ npm run watch   # watch change and bundle css/js
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details  
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
