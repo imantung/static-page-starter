@@ -6,13 +6,11 @@ Build pure HTML+CSS+JS static web page with modern dev tool (without react, vue,
 
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) -- package manager for Node.js packages, or modules
 
-## Getting Started
+## Run the example project
 
 ```bash
-npm install  # install package
-
-npx serve       # serve the static page
-npm run watch   # watch change and bundle css/js
+npm install   # install package
+npm start     # start the app
 ```
 
 ## Tech Overview
