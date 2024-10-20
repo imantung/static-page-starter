@@ -6,6 +6,7 @@
     "alpinejs": "^3.14.1",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.0.1",
+    "cpx": "^1.2.1",
     "cssnano": "^7.0.5",
     "esbuild": "^0.23.1",
     "eslint": "^9.9.1",
@@ -21,10 +22,11 @@
     "typescript-eslint": "^8.3.0"
   },
   "scripts": {
-    "start": "concurrently npm:serve npm:watch-css npm:watch-js",
-    "serve": "npx serve",
-    "watch-css": "npx postcss src/css/input.css -o dist/styles/output.css -w",
-    "watch-js": "npx esbuild src/ts/*.ts --bundle --sourcemap=inline --outdir=dist/js --watch"
+    "start": "concurrently npm:watch-css npm:watch-js npm:watch-page npm:serve",
+    "serve": "npx serve public",
+    "watch-css": "npx postcss src/css/input.css -o public/styles/output.css -w",
+    "watch-js": "npx esbuild src/ts/*.ts --bundle --sourcemap=inline --outdir=public/js --watch",
+    "watch-page": "npx cpx \"src/page/**/*\" public --watch"
   },
   "type": "module"
 }

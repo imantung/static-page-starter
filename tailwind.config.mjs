@@ -1,7 +1,7 @@
 import colors from 'tailwindcss/colors'
 
 export default {
-  content: ["./**/*.{html,js,ts}"],
+  content: ["./src/**/*.{html,js,ts}"],
   theme: {
     colors: {
       primary: colors.indigo,
